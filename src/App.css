@@ -16,3 +16,22 @@
   border-color: black;
 
 }
+
+button {
+  background-color: rgb(34, 20, 95);
+  border: 1px solid rgb(124, 110, 185);
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: rgb(104, 80, 212);
+}
