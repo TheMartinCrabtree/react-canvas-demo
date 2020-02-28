@@ -1,10 +1,9 @@
-import React, {useRef, useState, useEffect} from 'react';
+import React from 'react';
 import { useCanvas } from './hooks/useCanvas';
 import './App.css';
 
 function App() {
   
-
   const [ coordinates, setCoordinates, canvasRef, canvasWidth, canvasHeight ] = useCanvas();
 
   const handleCanvasClick=(event)=>{
@@ -18,10 +17,8 @@ function App() {
     setCoordinates([]);
   };
 
-
   return (
     <main className="App-main" >
-
       <canvas 
         className="App-canvas"
         ref={canvasRef}
@@ -32,9 +29,9 @@ function App() {
       <div className="button" >
         <button onClick={handleClearCanvas} > CLEAR </button>
       </div>
-
     </main>
   );
+
 };
 
 export default App;
